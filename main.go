@@ -5,7 +5,7 @@ import (
 )
 
 func doSome(i int) {
-	fmt.Printf("%d, hello world test1\n", i)
+	fmt.Printf("%d, hello world test2\n", i)
 
 }
 
