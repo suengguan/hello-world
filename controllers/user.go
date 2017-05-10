@@ -1,8 +1,8 @@
 package controllers
 
 import (
-	"hello-world/models"
 	"encoding/json"
+	"hello-world/models"
 
 	"github.com/astaxie/beego"
 )
@@ -31,6 +31,7 @@ func (u *UserController) Post() {
 // @Success 200 {object} models.User
 // @router / [get]
 func (u *UserController) GetAll() {
+	beego.Debug("--->get all user")
 	users := models.GetAllUsers()
 	u.Data["json"] = users
 	u.ServeJSON()
@@ -116,4 +117,3 @@ func (u *UserController) Logout() {
 	u.Data["json"] = "logout success"
 	u.ServeJSON()
 }
-
