@@ -7,7 +7,7 @@ import (
 )
 
 func main() {
-	beego.Debug("this is hello world-v56")
+	beego.Debug("this is hello world-v57")
 	if beego.BConfig.RunMode == "dev" {
 		beego.BConfig.WebConfig.DirectoryIndex = true
 		beego.BConfig.WebConfig.StaticDir["/swagger"] = "swagger"
