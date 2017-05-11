@@ -31,7 +31,7 @@ func (u *UserController) Post() {
 // @Success 200 {object} models.User
 // @router / [get]
 func (u *UserController) GetAll() {
-	beego.Debug("--->get all user v1")
+	beego.Debug("--->get all user v2")
 	users := models.GetAllUsers()
 	u.Data["json"] = users
 	u.ServeJSON()
