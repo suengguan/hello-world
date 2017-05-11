@@ -1,14 +1,13 @@
 package main
 
 import (
-	"fmt"
-	_ "hello-world/routers"
+	_ "opcode_server/routers"
 
 	"github.com/astaxie/beego"
 )
 
 func main() {
-	fmt.Println("start hello world service-v1")
+	beego.Debug("this is hello world-v55")
 	if beego.BConfig.RunMode == "dev" {
 		beego.BConfig.WebConfig.DirectoryIndex = true
 		beego.BConfig.WebConfig.StaticDir["/swagger"] = "swagger"
